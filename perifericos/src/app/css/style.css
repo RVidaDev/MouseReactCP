@@ -4,32 +4,47 @@
     list-style: none;
     text-decoration: none;  
     font-size: large;
-    background-color: #333333;
 }
 
 h1, a, p, li {
-    color: #dee2ff
+    color: white;
+}
+/* ===================== Imagens ==================== */
+
+.logo-computador{
+    width: 40px;
+    height: auto;
+}
+
+.carrinho{
+    width: 40px;
+    height: auto;
 }
 
 /* ===================== Cabeçalho ==================== */
 .cabecalho{
     width: 100%;
     height: 75px;
+    background-color: #0094FF; 
+    align-items: center;
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px; 
+    padding: 10px;
 }
+
 .menu_rotas{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    width: 50%;
 }
 
 .menu_rotas li{ 
     padding: 20px;
     margin: 15;
+    
 }
