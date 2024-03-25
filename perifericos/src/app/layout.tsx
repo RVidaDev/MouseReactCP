@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./css/style.css"
 import Header1 from "./Header/header";
+import Footer1 from "./Footer/footer";
 
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <Header1 />
+      <Footer1 />
     </html>
   );
 }

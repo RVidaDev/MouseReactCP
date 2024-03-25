@@ -47,3 +47,12 @@ h1, a, p, li {
     padding: 20px;
     margin: 15;
 }
+
+/*========================= Rodapé ================================*/
+
+.rodape {
+    width: 100%;
+    background-color: #0094FF;
+    color: #fff;
+    align-items: center;
+}
