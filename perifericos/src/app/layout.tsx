@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./css/style.css"
 import Header1 from "./Header/header";
-
+import Footer1 from "./Footer/footer";
+import ProductCards from "./MainLP/page";
 
 export const metadata: Metadata = {
   title: "Perifericos",
@@ -16,6 +17,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <Header1 />
+      <ProductCards />
+      <Footer1 />
     </html>
   );
 }
