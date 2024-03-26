@@ -6,6 +6,7 @@ interface ProductCardProps {
  productLink: string;
 }
 
+
 interface CustomDivProps extends React.HTMLAttributes<HTMLDivElement> {
  className: string;
 }
@@ -26,6 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ imageUrl, productName, produc
  );
 };
 
+
 const CustomDiv: React.FC<CustomDivProps> = ({ className, children }) => {
  return <div className={className}>{children}</div>;
 };
@@ -34,10 +36,10 @@ const CustomImg: React.FC<CustomImgProps> = ({ className, ...rest }) => {
  return <img className={className} {...rest} />;
 };
 
-const ProductCardsTeclado: React.FC = () => {
+const ProductCardsMonitor: React.FC = () => {
  const products = [
     {
-      imageUrl: "../imagens/Teclado-home.png",
+      imageUrl: "../imagens/monitor-home.png",
       productName: "Teclados",
       productLink: "/produto1",
     },
@@ -57,4 +59,4 @@ const ProductCardsTeclado: React.FC = () => {
  );
 };
 
-export default ProductCardsTeclado;
+export default ProductCardsMonitor;

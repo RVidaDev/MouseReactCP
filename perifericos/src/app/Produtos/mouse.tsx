@@ -16,7 +16,7 @@ interface CustomImgProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 
 const ProductCard: React.FC<ProductCardProps> = ({ imageUrl, productName, productLink }) => {
  return (
-    <CustomDiv className="Teclado">
+    <CustomDiv className="Mouse">
       <CustomImg className="imagem" src={imageUrl} alt={productName} />
       <h3>{productName}</h3>
       <a href={productLink} style={{ color: "blue" }}>
@@ -26,6 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ imageUrl, productName, produc
  );
 };
 
+
 const CustomDiv: React.FC<CustomDivProps> = ({ className, children }) => {
  return <div className={className}>{children}</div>;
 };
@@ -34,11 +35,11 @@ const CustomImg: React.FC<CustomImgProps> = ({ className, ...rest }) => {
  return <img className={className} {...rest} />;
 };
 
-const ProductCardsTeclado: React.FC = () => {
+const ProductCardsMouse: React.FC = () => {
  const products = [
     {
-      imageUrl: "../imagens/Teclado-home.png",
-      productName: "Teclados",
+      imageUrl: "../imagens/Mouse-home.png",
+      productName: "Mouse",
       productLink: "/produto1",
     },
  ];
@@ -57,4 +58,4 @@ const ProductCardsTeclado: React.FC = () => {
  );
 };
 
-export default ProductCardsTeclado;
+export default ProductCardsMouse;

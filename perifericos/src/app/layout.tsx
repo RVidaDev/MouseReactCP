@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import "./css/style.css";
 import Header1 from "./Header/header";
-import Footer from "./Footer/footer";
+import Footer1 from "./Footer/footer";
 import ProductCards from "./MainLP/page";
 
 // Definição dos metadados
@@ -28,4 +28,3 @@ export default function RootLayout({
 
 
 
-// Exportação do Footer1
