@@ -12,11 +12,10 @@ const Exemplo02: React.FC = () => {
         Email: '',
     };
 
-    const [FormData, setFormData]d = useState<FormData>(initialFormState);
-    const [submitteData, setSubmittedData] = useState<FormData | null>(null);
+    const [formData, setFormData] = useState<FormData>(initialFormState);
+    const [submittedData, setSubmittedData] = useState<FormData | null>(null);
 
-
-    const handleInputChange = (e: React.ChangeEvent<HTML InputElement>) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
@@ -38,12 +37,12 @@ const Exemplo02: React.FC = () => {
             <form onSubmit={handleSubmit}>
                 <label>
                     Nome:
-                    <input type="text" name="name" value={FormDataEvent.name} onChange={handleInputChange} />
+                    <input type="text" name="Nome" value={formData.Nome} onChange={handleInputChange} />
                 </label>
                 <br />
                 <label>
                     E-mail:
-                    <input type="email" name="email" value={FormDataEvent.email} onChange={handleInputChange} />
+                    <input type="email" name="Email" value={formData.Email} onChange={handleInputChange} />
                 </label>
                 <br />
                 <button type="submit">Enviar</button>
@@ -51,19 +50,12 @@ const Exemplo02: React.FC = () => {
             {submittedData && (
                 <div>
                     <p><b>Dados do formulário:</b></p>
-                    <p>Nome: {submittedData.name}</p>
-                    <p>E-mail: {submittedData.email}</p>
+                    <p>Nome: {submittedData.Nome}</p>
+                    <p>E-mail: {submittedData.Email}</p>
                 </div>
             )}
         </>
     );
-
-    export default Exemplo02;
-            
-
-
-
-
-
-
 }
+
+export default Exemplo02;
