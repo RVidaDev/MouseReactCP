@@ -14,13 +14,13 @@ const Header1 = () => {
                             <Link href="/Produtos/teclado" className="botao_link">TECLADOS</Link>
                         </li>
                         <li>
-                            <Link href="/" className="botao_link">MOUSES</Link>
+                            <Link href="/Produtos/mouse" className="botao_link">MOUSES</Link>
                         </li>
                         <li>
-                            <Link href="/" className="botao_link">MONITORES</Link>
+                            <Link href="/Produtos/teclado" className="botao_link">MONITORES</Link>
                         </li>
                         <li>
-                            <Link href="/useState/Exemplo02" className="botao_link">CADASTRO</Link>
+                            <Link href="../UseState/Exemplo02" className="botao_link">CADASTRO</Link>
                         </li>
                         <img className="carrinho" src="/imagens/cart-shopping-solid.svg" alt="logo de carrinho de compras" /> 
                     </ul>
